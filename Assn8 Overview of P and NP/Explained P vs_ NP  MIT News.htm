@@ -1,0 +1,1729 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0038)http://news.mit.edu/2009/explainer-pnp -->
+<!DOCTYPE html PUBLIC "" ""><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!--><HTML 
+class="no-js"><!--<![endif]--><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+     
+<META charset="utf-8">     
+<META http-equiv="X-UA-Compatible" content="IE=edge">     
+<META name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"> 
+     <LINK href="http://news.mit.edu/sites/mit.edu.newsoffice/themes/mitnews/favicon.ico" 
+rel="shortcut icon" type="image/vnd.microsoft.icon"> 
+<META name="description" content="The most notorious problem in theoretical computer science remains open, but the attempts to solve it have led to profound insights."> 
+<META name="keywords" content="Computational complexity theory, Theoretical computer science, Explained, P vs. NP"> 
+<META name="news_keywords" content="Computational complexity theory, Theoretical computer science, Explained, P vs. NP"> 
+<LINK href="http://news.mit.edu/sites/mit.edu.newsoffice/files/styles/article_cover_image_small/public/images/2009/20100816151036-0.jpg" 
+rel="image_src"> 
+<META name="twitter:card" content="summary"> 
+<META name="twitter:site" content="@mit"> 
+<META content="15460048" property="twitter:site:id"> 
+<META content="Larry Hardesty, MIT News Office" property="og:author"> 
+<META content="The most notorious problem in theoretical computer science remains open, but the attempts to solve it have led to profound insights." 
+property="og:description"> 
+<META content="http://news.mit.edu/sites/mit.edu.newsoffice/files/styles/og/public/images/2009/20100816151036-0.jpg" 
+property="og:image"> 
+<META content="Explained: P vs. NP" property="og:title"> 
+<META content="http://news.mit.edu/2009/explainer-pnp" property="og:url"> 
+<META content="126533127390327" property="fb:page_id"> 
+<META content="article" property="og:type"> 
+<META content="MIT News" property="og:site_name">             <LINK href="http://news.mit.edu/2009/explainer-pnp" 
+rel="canonical">             <TITLE>Explained: P vs. NP | MIT News</TITLE>       
+  <LINK href="Explained%20P%20vs_%20NP%20%20MIT%20News_files/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Explained%20P%20vs_%20NP%20%20MIT%20News_files/css_u9Cn6xFPfn6NvRqMGUV6k10stVTR4AGT7eontS75hX4.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Explained%20P%20vs_%20NP%20%20MIT%20News_files/css_Zo1r09piXtl5JhJOMD7hQCiB0jhDpHLlkhIEB61cQvE.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Explained%20P%20vs_%20NP%20%20MIT%20News_files/css_mGba82CV23AFL2Nl6cDO6GrkvfrBU6Unma20ECfj9gs.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Explained%20P%20vs_%20NP%20%20MIT%20News_files/css_zNjEyTXCUgBk3ONK7sNDw6HXxFbc1qFGL2hJ9UXp9Nw.css" 
+rel="stylesheet" type="text/css" media="print">     
+<SCRIPT src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/js_JLxuxbhhrFRy-sBnijHkR0TGGHgiukMPv94zvDWgQ3g.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/js_vnpVdvVVC3esFhe5pUFFpitcfPa22s6kgCid6sguM9g.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"mitnews","theme_token":"ZXw7-msa6p0P2G_MbnjnsLcnoItasylSh_RfzZIx42A","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/vendor\/flexslider\/jquery.flexslider-min.js":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/vendor\/fancybox\/source\/jquery.fancybox.pack.js":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/vendor\/waypoints\/waypoints.min.js":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/vendor\/waypoints\/waypoints-sticky.min.js":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/vendor\/modernizr-2.6.2.min.js":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/main.js":1},"css":{"modules\/system\/system.base.css":1,"sites\/all\/modules\/contri\/date\/date_api\/date.css":1,"sites\/all\/modules\/contri\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contri\/views\/css\/views.css":1,"sites\/all\/modules\/contri\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contri\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/custom\/shib_auth\/shib_auth.css":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/vendor\/flexslider\/flexslider.css":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/vendor\/fancybox\/source\/jquery.fancybox.css":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/css\/main.css":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/css\/normalize.css":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/css\/site.css":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/css\/print.css":1}}});
+//--><!]]>
+</SCRIPT>
+     
+<SCRIPT src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/tzb4pde.js" type="text/javascript"></SCRIPT>
+     
+<SCRIPT type="text/javascript">try{Typekit.load();}catch(e){}</SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18231"></HEAD> 
+<BODY>
+<DIV id="site-wrapper" itemtype="http://schema.org/Article" 
+itemscope=""><HEADER>
+<DIV id="site-header-nav-wrapper">
+<DIV class="clearfix" id="site-header-nav">
+<UL class="clearfix" id="top-menu-bar">
+  <LI class="logo-mit"><A onclick="ga('send', 'event', 'topbar', 'click', 'mit logo');" 
+  href="http://web.mit.edu/" target="_blank"><SPAN class="logo"></SPAN>          
+                Massachusetts Institute of Technology                     </A>   
+                </LI></UL>
+<DIV class="clearfix" id="follow-social-menu">
+<UL id="top-menu-items">
+  <LI><A onclick="ga('send', 'event', 'topbar', 'click', 'news');" href="http://news.mit.edu/">News</A></LI>
+  <LI><A onclick="ga('send', 'event', 'topbar', 'click', 'video');" href="http://video.mit.edu/" 
+  target="_blank">Video</A></LI>
+  <LI><A onclick="ga('send', 'event', 'topbar', 'click', 'social');" href="http://connect.mit.edu/" 
+  target="_blank">Social</A></LI></UL>
+<DIV class="label">Follow MIT</DIV>
+<UL id="follow-social-items">
+  <LI><A class="rss" onclick="ga('send', 'event', 'topbar', 'click', 'rss');" 
+  href="http://news.mit.edu/rss"><SPAN>MIT News RSS</SPAN></A></LI>
+  <LI><A class="twitter" onclick="ga('send', 'event', 'topbar', 'click', 'twiiter');" 
+  href="https://twitter.com/mit" target="_blank"><SPAN>Follow MIT on 
+  Twitter</SPAN></A></LI>
+  <LI><A class="facebook" onclick="ga('send', 'event', 'topbar', 'click', 'facebook');" 
+  href="https://www.facebook.com/MITnews" target="_blank"><SPAN>Follow MIT on 
+  Facebook</SPAN></A></LI>
+  <LI><A class="googleplus" onclick="ga('send', 'event', 'topbar', 'click', 'google+');" 
+  href="https://plus.google.com/+mit?rel=author" target="_blank"><SPAN>Follow 
+  MIT on Google+</SPAN></A></LI>
+  <LI><A class="instagram" onclick="ga('send', 'event', 'topbar', 'click', 'instagram');" 
+  href="http://instagram.com/mitpics" target="_blank"><SPAN>Follow MIT on 
+  Instagram</SPAN></A></LI>
+  <LI><A class="flickr" onclick="ga('send', 'event', 'topbar', 'click', 'flickr');" 
+  href="http://www.flickr.com/photos/cpsphotolibrary" 
+  target="_blank"><SPAN>Follow MIT on Flickr</SPAN></A></LI>
+  <LI><A class="youtube" onclick="ga('send', 'event', 'topbar', 'click', 'youtube');" 
+  href="http://www.youtube.com/MIT" target="_blank"><SPAN>Follow MIT on 
+  YouTube</SPAN></A></LI></UL></DIV></DIV></DIV></HEADER><NAV>
+<DIV id="site-header-area-wrapper">
+<DIV class="clearfix" id="site-header-area">
+<DIV id="site-header"><A class="mit-logo-button" href="http://web.mit.edu/" 
+target="_blank"></A><IMG id="logo-mit-news-img" alt="MIT News Office" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/logo-mit-news-b.png"> 
+                <A id="logo-mit-news" href="http://news.mit.edu/">
+<H2>MIT News Office</H2></A><A id="header-browse-button" href="http://news.mit.edu/2009/explainer-pnp#site-browse-area"></A><A 
+id="search-button" href="http://news.mit.edu/2009/explainer-pnp#site-search-area"></A></DIV>
+<DIV class="clearfix" id="options-wrapper">
+<DIV id="site-browse-button-area"><A id="browse-button" href="http://news.mit.edu/2009/explainer-pnp#site-browse-area">Browse</A><SPAN 
+class="text">or</SPAN>                 </DIV>
+<DIV id="site-search-area">
+<DIV class="wrapper clearfix">
+<FORM id="form-search" action="/search" method="get" 
+accept-charset="UTF-8"><INPUT name="keyword" title="Enter the keyword you wish to search for." id="keyword" type="text" placeholder="Search" value=""> 
+                            <INPUT id="submit-search" type="submit" value="Submit"></FORM></DIV></DIV></DIV>
+<DIV id="site-browse-area">
+<H2 class="title">Browse</H2>
+<UL class="clearfix" id="browse-options">
+  <LI class="clearfix"><A class="browse-option" href="http://news.mit.edu/2009/explainer-pnp#">
+  <H3>Most Popular</H3></A>
+  <DIV class="browse-content">
+  <DIV class="view view-browse-news-by-popularity view-id-browse_news_by_popularity view-display-id-block_browse_news_by_popularity view-dom-id-7be77ab7179d9431381529e3474436fb">
+  <DIV class="view-header-section">
+  <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+          
+  <DIV class="view-main-section">
+  <DIV class="view-content">
+  <UL class="browse-news-popular">
+    <LI class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+    href="http://news.mit.edu/2016/taylor-fravel-awarded-prestigious-carnegie-fellowship-0419"><IMG 
+    width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Fravel.jpg" 
+    typeof="foaf:Image"></A>              <SPAN class="browse_news_by_popularity_item"><A 
+    href="http://news.mit.edu/2016/taylor-fravel-awarded-prestigious-carnegie-fellowship-0419">MIT 
+    political scientist awarded prestigious Carnegie fellowship</A></SPAN></LI>
+    <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/sports-shorts-0419-mit-varsity-athletics"><IMG 
+    width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Lacrosse-McCormick-Cecilia-2016.jpg" 
+    typeof="foaf:Image"></A>              <SPAN class="browse_news_by_popularity_item"><A 
+    href="http://news.mit.edu/2016/sports-shorts-0419-mit-varsity-athletics">Sports 
+    Shorts for April 19, 2016: A weekly wrap-up of MIT varsity 
+    athletics</A></SPAN></LI>
+    <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2016/making-electronics-out-coal-0419"><IMG 
+    width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Devices-Coal-1.jpg" 
+    typeof="foaf:Image"></A>              <SPAN class="browse_news_by_popularity_item"><A 
+    href="http://news.mit.edu/2016/making-electronics-out-coal-0419">Making 
+    electronics out of coal</A></SPAN></LI>
+    <LI class="views-row views-row-4 views-row-even clearfix"><A href="http://news.mit.edu/2016/once-and-future-library-0419"><IMG 
+    width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/Adjaye-Gregory-Library-Ed-Sumner.jpg" 
+    typeof="foaf:Image"></A>              <SPAN class="browse_news_by_popularity_item"><A 
+    href="http://news.mit.edu/2016/once-and-future-library-0419">The once and 
+    future library</A></SPAN></LI>
+    <LI class="views-row views-row-5 views-row-odd clearfix"><A href="http://news.mit.edu/2016/mit-open-house-look-under-the-dome-0419"><IMG 
+    width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Open-House-2016_1.jpg" 
+    typeof="foaf:Image"></A>              <SPAN class="browse_news_by_popularity_item"><A 
+    href="http://news.mit.edu/2016/mit-open-house-look-under-the-dome-0419">MIT 
+    invites you for a look under the dome</A></SPAN></LI>
+    <LI class="views-row views-row-6 views-row-even clearfix"><A href="http://news.mit.edu/2016/student-profile-juan-jaramillo-0420"><IMG 
+    width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-juan-jaramillo-montezco-A1.jpg" 
+    typeof="foaf:Image"></A>              <SPAN class="browse_news_by_popularity_item"><A 
+    href="http://news.mit.edu/2016/student-profile-juan-jaramillo-0420">Combining 
+    curiosity with a desire to help</A></SPAN></LI>
+    <LI class="views-row views-row-7 views-row-odd clearfix"><A href="http://news.mit.edu/2016/symposium-frontiers-future-0413"><IMG 
+    width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/photo-6-L%2520Rafael%2520Reif.jpg" 
+    typeof="foaf:Image"></A>              <SPAN class="browse_news_by_popularity_item"><A 
+    href="http://news.mit.edu/2016/symposium-frontiers-future-0413">MIT 
+    researchers look to the future</A></SPAN></LI>
+    <LI class="views-row views-row-8 views-row-even views-row-last clearfix"><A 
+    href="http://news.mit.edu/2016/how-make-cities-more-energy-efficient-0420"><IMG 
+    width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Efficient-Cities.jpg" 
+    typeof="foaf:Image"></A>              <SPAN class="browse_news_by_popularity_item"><A 
+    href="http://news.mit.edu/2016/how-make-cities-more-energy-efficient-0420">How 
+    to make cities more energy 
+  efficient</A></SPAN></LI></UL></DIV></DIV></DIV></DIV></LI>
+  <LI class="clearfix"><A class="browse-option" href="http://news.mit.edu/topics">
+  <H3>By Topic</H3></A>
+  <DIV class="browse-content">
+  <DIV class="view view-browse-news-by-topics view-id-browse_news_by_topics view-display-id-block_browse_news_by_topics view-dom-id-7136a5c1db9673133c2858c7d1d7e224">
+  <DIV class="view-header-section">
+  <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+          
+  <DIV class="view-main-section">
+  <DIV class="view-content">
+  <UL class="browse-news-by-terms">
+    <LI class="views-row views-row-1 views-row-odd views-row-first"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/topic/computer-science-and-artificial-intelligence-laboratory-csail">Computer 
+    Science and Artificial Intelligence Laboratory (CSAIL)</A></SPAN>            
+      
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-905a137a855a29056b9393a28a18020c">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/self-driving-cars-meet-rubber-duckies-0420"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Duckiebot-autonomous-vehicles.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/self-driving-cars-meet-rubber-duckies-0420">Self-driving 
+      cars, meet rubber duckies</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/ai-system-predicts-85-percent-cyber-attacks-using-input-human-experts-0418"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/AI2-CSAIL.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/ai-system-predicts-85-percent-cyber-attacks-using-input-human-experts-0418">System 
+      predicts 85 percent of cyber-attacks using input from human experts 
+      </A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2016/patching-web-applications-0415"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Bug-Finder-1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/patching-web-applications-0415">Patching 
+      up Web applications</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2016/mit-professional-education-announces-new-online-course-internet-things-0408"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/internet-of-things.png" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/mit-professional-education-announces-new-online-course-internet-things-0408">MIT 
+      Professional Education announces new online course on the Internet of 
+      Things</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-2 views-row-even"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/topic/computer-vision">Computer vision</A></SPAN>  
+                
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-b294806bd628e4ca3c57ad29e4535c30">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/self-driving-cars-meet-rubber-duckies-0420"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Duckiebot-autonomous-vehicles.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/self-driving-cars-meet-rubber-duckies-0420">Self-driving 
+      cars, meet rubber duckies</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/csail-computer-model-matches-humans-predicting-how-objects-move-0104"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/Galileo-CSAIL-MIT.png" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/csail-computer-model-matches-humans-predicting-how-objects-move-0104">Computer 
+      model matches humans at predicting how objects move</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2015/csail-deep-learning-algorithm-predicts-photo-memorability-near-human-levels-1215"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MemNet-MIT-CSAIL.png" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2015/csail-deep-learning-algorithm-predicts-photo-memorability-near-human-levels-1215">Deep-learning 
+      algorithm predicts photos’ memorability at “near-human” 
+      levels</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2015/csail-toyota-25-million-research-center-autonomous-cars-0904"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Toyota-Collab.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2015/csail-toyota-25-million-research-center-autonomous-cars-0904">CSAIL 
+      joins with Toyota on $25 million research center for autonomous 
+      cars</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-3 views-row-odd"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/topic/electrical-engineering-computer-science-eecs">Electrical 
+    Engineering &amp; Computer Science (eecs)</A></SPAN>              
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-aacdee4d1c0980eaf247f3729cfa0e07">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/self-driving-cars-meet-rubber-duckies-0420"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Duckiebot-autonomous-vehicles.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/self-driving-cars-meet-rubber-duckies-0420">Self-driving 
+      cars, meet rubber duckies</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/ai-system-predicts-85-percent-cyber-attacks-using-input-human-experts-0418"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/AI2-CSAIL.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/ai-system-predicts-85-percent-cyber-attacks-using-input-human-experts-0418">System 
+      predicts 85 percent of cyber-attacks using input from human experts 
+      </A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2016/patching-web-applications-0415"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Bug-Finder-1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/patching-web-applications-0415">Patching 
+      up Web applications</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2016/tata-center-announces-new-projects-0413"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/tata-center-logo.png" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/tata-center-announces-new-projects-0413">Tata 
+      Center announces new projects for 
+    2016-2017</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-4 views-row-even"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/topic/imaging">Imaging</A></SPAN>              
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-4625d3d2db3e2ea2aaae819c6f35dcd7">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/imaging-optical-fibers-brush-0212"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Optical-Brush-1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/imaging-optical-fibers-brush-0212">Imaging 
+      with an “optical brush”</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2015/new-microscope-real-time-videos-nanoscale-1214"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Better-Micro-1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2015/new-microscope-real-time-videos-nanoscale-1214">New 
+      microscope creates near-real-time videos of nanoscale 
+      processes</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2015/protein-imaging-detailed-brain-architecture-1203"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Protein-Imaging.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2015/protein-imaging-detailed-brain-architecture-1203">Protein 
+      imaging reveals detailed brain architecture</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2015/streamlining-mobile-image-processing-1113"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-cellphone-photo.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2015/streamlining-mobile-image-processing-1113">Streamlining 
+      mobile image processing</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-5 views-row-odd views-row-last"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/topic/research">Research</A></SPAN>              
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-d9bffe08aa93d3315fff5ca161924e5d">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/self-driving-cars-meet-rubber-duckies-0420"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Duckiebot-autonomous-vehicles.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/self-driving-cars-meet-rubber-duckies-0420">Self-driving 
+      cars, meet rubber duckies</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/how-make-cities-more-energy-efficient-0420"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Efficient-Cities.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/how-make-cities-more-energy-efficient-0420">How 
+      to make cities more energy efficient</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2016/student-profile-juan-jaramillo-0420"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-juan-jaramillo-montezco-A1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/student-profile-juan-jaramillo-0420">Combining 
+      curiosity with a desire to help</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2016/mit-open-house-look-under-the-dome-0419"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Open-House-2016_1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/mit-open-house-look-under-the-dome-0419">MIT 
+      invites you for a look under the 
+    dome</A></SPAN></LI></UL></DIV></DIV></DIV></LI></UL></DIV></DIV></DIV>
+  <DIV class="link-more"><A href="http://news.mit.edu/topics">See All 
+  Topics</A></DIV></DIV></LI>
+  <LI class="clearfix"><A class="browse-option" href="http://news.mit.edu/2009/explainer-pnp#">
+  <H3>By School</H3></A>
+  <DIV class="browse-content">
+  <DIV class="view view-browse-news-by-schools view-id-browse_news_by_schools view-display-id-block_browse_news_by_schools view-dom-id-a9db6286bb7aac3af2cbe46df0f6ef81">
+  <DIV class="view-header-section">
+  <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+          
+  <DIV class="view-main-section">
+  <DIV class="view-content">
+  <UL class="browse-news-by-terms">
+    <LI class="views-row views-row-1 views-row-odd views-row-first"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/architecture-and-planning">School of Architecture 
+    + Planning</A></SPAN>              
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-9203e9beafb1afc638993bf1bff04f4f">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/mit-open-house-look-under-the-dome-0419"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Open-House-2016_1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/mit-open-house-look-under-the-dome-0419">MIT 
+      invites you for a look under the dome</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/robust-mit-presence-2016-venice-architecture-biennale-0418"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/2016-venice-architecture-biennale.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/robust-mit-presence-2016-venice-architecture-biennale-0418">A 
+      robust presence for MIT at the 2016 Venice Architecture 
+      Biennale</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2016/tata-center-announces-new-projects-0413"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/tata-center-logo.png" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/tata-center-announces-new-projects-0413">Tata 
+      Center announces new projects for 2016-2017</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2016/book-celebrates-mit-urban-planning-projects-that-solve-real-world-problems-0412"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/planning-practice-mit-dusp.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/book-celebrates-mit-urban-planning-projects-that-solve-real-world-problems-0412">Book 
+      celebrates MIT urban planning projects that solve real-world 
+      problems</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-2 views-row-even"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/engineering">School of Engineering</A></SPAN>      
+            
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-e658469f64efef0c9649870cee07bdde">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/mit-nano-rising-0420"><IMG width="90" 
+      height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-nano-steel-1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/mit-nano-rising-0420">MIT.nano 
+      rising</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/self-driving-cars-meet-rubber-duckies-0420"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Duckiebot-autonomous-vehicles.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/self-driving-cars-meet-rubber-duckies-0420">Self-driving 
+      cars, meet rubber duckies</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2016/how-make-cities-more-energy-efficient-0420"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Efficient-Cities.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/how-make-cities-more-energy-efficient-0420">How 
+      to make cities more energy efficient</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2016/student-profile-juan-jaramillo-0420"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-juan-jaramillo-montezco-A1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/student-profile-juan-jaramillo-0420">Combining 
+      curiosity with a desire to help</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-3 views-row-odd"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/humanities-arts-and-social-sciences">School of 
+    Humanities, Arts, and Social Sciences</A></SPAN>              
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-c898e47031f21668933577dcde7ed392">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/mit-open-house-look-under-the-dome-0419"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Open-House-2016_1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/mit-open-house-look-under-the-dome-0419">MIT 
+      invites you for a look under the dome</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/taylor-fravel-awarded-prestigious-carnegie-fellowship-0419"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Fravel.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/taylor-fravel-awarded-prestigious-carnegie-fellowship-0419">MIT 
+      political scientist awarded prestigious Carnegie 
+fellowship</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2016/using-new-models-big-data-to-better-understand-financial-risk-0411"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/finance-risk.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/using-new-models-big-data-to-better-understand-financial-risk-0411">Using 
+      new models and big data to better understand financial 
+risk</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2016/study-rich-poor-huge-mortality-gap-us-0411"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Lifespan-Inequality.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/study-rich-poor-huge-mortality-gap-us-0411">New 
+      study shows rich, poor have huge mortality gap in 
+    U.S.</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-4 views-row-even"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/management">Sloan School of Management</A></SPAN>  
+                
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-b30123a216577b349249547d85265562">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/mit-open-house-look-under-the-dome-0419"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Open-House-2016_1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/mit-open-house-look-under-the-dome-0419">MIT 
+      invites you for a look under the dome</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/tata-center-announces-new-projects-0413"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/tata-center-logo.png" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/tata-center-announces-new-projects-0413">Tata 
+      Center announces new projects for 2016-2017</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2016/using-new-models-big-data-to-better-understand-financial-risk-0411"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/finance-risk.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/using-new-models-big-data-to-better-understand-financial-risk-0411">Using 
+      new models and big data to better understand financial 
+risk</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2016/qs-world-university-rankings-rates-mit-no-1-in-12-subjects-0408"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT_Killian_Court-Madcoverboy.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/qs-world-university-rankings-rates-mit-no-1-in-12-subjects-0408">QS 
+      World University Rankings rates MIT No. 1 in 12 subjects for 
+      2016</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-5 views-row-odd views-row-last"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/science">School of Science</A></SPAN>              
+
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-590e6084af71dd0616e6689a947c1f30">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/mit-nano-rising-0420"><IMG width="90" 
+      height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-nano-steel-1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/mit-nano-rising-0420">MIT.nano 
+      rising</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/mit-open-house-look-under-the-dome-0419"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Open-House-2016_1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/mit-open-house-look-under-the-dome-0419">MIT 
+      invites you for a look under the dome</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2016/ancient-tectonic-activity-was-trigger-for-ice-ages-0418"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Mezozoic-Sequestration-1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/ancient-tectonic-activity-was-trigger-for-ice-ages-0418">Study: 
+      Ancient tectonic activity was trigger for ice ages</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2016/paul-woskov-explores-new-path-through-earth-crust-0412"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/paul-woskov-mit.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/paul-woskov-explores-new-path-through-earth-crust-0412">Rock, 
+      drill bit, microwave: Paul Woskov explores a new path through the Earth’s 
+      crust </A></SPAN></LI></UL></DIV></DIV></DIV></LI></UL></DIV></DIV></DIV><!--<a href="/schools">See All Schools</a> --> 
+                          </DIV></LI>
+  <LI class="clearfix"><A class="browse-option" href="http://news.mit.edu/departments">
+  <H3>By Department</H3></A>
+  <DIV class="browse-content">
+  <DIV class="view view-browse-news-by-departments view-id-browse_news_by_departments view-display-id-block_browse_news_by_departments view-dom-id-d232432c3e6c59e5bcf48dd5e637b497">
+  <DIV class="view-header-section">
+  <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+          
+  <DIV class="view-main-section">
+  <DIV class="view-content">
+  <UL class="browse-news-by-terms">
+    <LI class="views-row views-row-1 views-row-odd views-row-first"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/department/brain-and-cognitive-sciences">Brain and 
+    Cognitive Sciences</A></SPAN>              
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-c4c2902418c3aa96c90ad1301e26ea29">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/april-12-symposium-immersive-intellectual-journey-across-campus-0405"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/mit2016-event-poster.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/april-12-symposium-immersive-intellectual-journey-across-campus-0405">April 
+      12 symposium: Take an immersive, intellectual journey across 
+      campus</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/brain-processes-emotions-mental-illness-depression-0331"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Emotional-Wiring.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/brain-processes-emotions-mental-illness-depression-0331">How 
+      the brain processes emotions</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2016/school-of-science-honors-staff-infinite-mile-kilometer-awards-0328"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/lobby7-science.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/school-of-science-honors-staff-infinite-mile-kilometer-awards-0328">School 
+      of Science honors staff with 2016 Infinite Mile Awards</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2016/learning-more-about-the-brain-0324"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/unruly-art.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/learning-more-about-the-brain-0324">Learning 
+      more about the brain</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-2 views-row-even"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/department/engineering-systems-division">Engineering 
+    Systems Division</A></SPAN>              
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-b0646b8608af4abe637bbc6c0d39a3e7">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2015/faculty-profile-maria-yang-1209"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-maria-yang.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2015/faculty-profile-maria-yang-1209">An 
+      eye for design</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2015/envisioning-future-water-900-million-people-1120"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/water-india-mit-team.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2015/envisioning-future-water-900-million-people-1120">Envisioning 
+      the future of water for 900 million people</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2015/professor-richard-de-neufville-honored-white-house-1021"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/richard-de-neufville-A1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2015/professor-richard-de-neufville-honored-white-house-1021">Professor 
+      Richard de Neufville honored at the White House</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2015/book-yossi-sheffi-companies-manage-unexpected-1021"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Resilient-Business.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2015/book-yossi-sheffi-companies-manage-unexpected-1021">Expecting 
+      the unexpected</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-3 views-row-odd"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/department/business">Business</A></SPAN>           
+       
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-35cf0a9e336a18cb5060664870b05af0">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><SPAN 
+      class="browse_news_by_term_item"><A href="http://news.mit.edu/2013/students-prepare-for-real-world-product-development-through-hands-on-collaboration">Students 
+      prepare for real-world product development through hands-on 
+      collaboration</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2013/chinese-entrepreneurs-visit-mit-sloan"><IMG 
+      width="90" height="60" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/20131010135547-0.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2013/chinese-entrepreneurs-visit-mit-sloan">Chinese 
+      entrepreneurs visit MIT Sloan</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2013/study-ethanol-not-a-major-factor-in-reducing-gas-prices-1009"><IMG 
+      width="90" height="60" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/20131009155101-0.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2013/study-ethanol-not-a-major-factor-in-reducing-gas-prices-1009">Study: 
+      Ethanol not a major factor in reducing gas prices</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><SPAN 
+      class="browse_news_by_term_item"><A href="http://news.mit.edu/2013/alumna-discovers-elixir-for-successful-integrative-medicine-practice">MIT 
+      Sloan alumna finds elixir for successful integrative medicine 
+      practice</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-4 views-row-even"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/department/global-studies-and-languages">Global 
+    Studies and Languages</A></SPAN>              
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-ade14d4980d1b3415360bd69de3bb0af">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/mit-shass-research-fund-recipients-0125"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/1800x1200_SHASS-Research-Fund-emblem-2_0.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/mit-shass-research-fund-recipients-0125">Ten 
+      MIT-SHASS Research Fund recipients announced for 2016</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/three-mit-students-named-inaugural-schwarzman-scholars-0111"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-CN-Schwartzman-Scholars.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/three-mit-students-named-inaugural-schwarzman-scholars-0111">Three 
+      from MIT named inaugural Schwarzman Scholars</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2015/global-studies-languages-announces-new-cantonese-class-1120"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/Gfp-china-hong-kong-city-skyscrapers.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2015/global-studies-languages-announces-new-cantonese-class-1120">MIT 
+      Global Studies and Languages announces new Cantonese class</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2015/charif-kiwan-syrian-film-collective-abounaddara-1013"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/charif-mit-visit.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2015/charif-kiwan-syrian-film-collective-abounaddara-1013">Charif 
+      Kiwan, representing Syrian film collective, to speak at 
+    MIT</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-5 views-row-odd views-row-last"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/department/music-and-theater-arts">Music and 
+    Theater Arts</A></SPAN>              
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-849ae18e2f15c2021c4da440831ebea0">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/3-questions-alan-brody-small-infinities-0407"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Small-Infinities.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/3-questions-alan-brody-small-infinities-0407">3 
+      Questions: Alan Brody on “Small Infinities”</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/april-12-symposium-immersive-intellectual-journey-across-campus-0405"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/mit2016-event-poster.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/april-12-symposium-immersive-intellectual-journey-across-campus-0405">April 
+      12 symposium: Take an immersive, intellectual journey across 
+      campus</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2016/learning-think-engineer-neerja-aggarwal-0309"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-student-Neerja-Aggarwal_1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/learning-think-engineer-neerja-aggarwal-0309">Learning 
+      to think like an engineer</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2016/four-professors-named-2016-macvicar-faculty-fellows-0307"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-MacVicar-Fellows.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/four-professors-named-2016-macvicar-faculty-fellows-0307">Four 
+      professors named 2016 MacVicar Faculty 
+    Fellows</A></SPAN></LI></UL></DIV></DIV></DIV></LI></UL></DIV></DIV></DIV>
+  <DIV class="link-more"><A href="http://news.mit.edu/departments">See All 
+  Departments</A></DIV></DIV></LI>
+  <LI class="clearfix"><A class="browse-option" href="http://news.mit.edu/research-centers">
+  <H3>By Center, Lab, &amp; Program</H3></A>
+  <DIV class="browse-content">
+  <DIV class="view view-browse-news-by-research-centers view-id-browse_news_by_research_centers view-display-id-block_browse_news_by_research_centers view-dom-id-f5d7d807ee6db882ddff0860659fcc16">
+  <DIV class="view-header-section">
+  <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+          
+  <DIV class="view-main-section">
+  <DIV class="view-content">
+  <UL class="browse-news-by-terms">
+    <LI class="views-row views-row-1 views-row-odd views-row-first"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/topic/csail">Computer Science and Artificial 
+    Intelligence Laboratory (CSAIL)</A></SPAN>              
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-087366a857d8f1ddb19f453044584e8b">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/self-driving-cars-meet-rubber-duckies-0420"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Duckiebot-autonomous-vehicles.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/self-driving-cars-meet-rubber-duckies-0420">Self-driving 
+      cars, meet rubber duckies</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/ai-system-predicts-85-percent-cyber-attacks-using-input-human-experts-0418"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/AI2-CSAIL.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/ai-system-predicts-85-percent-cyber-attacks-using-input-human-experts-0418">System 
+      predicts 85 percent of cyber-attacks using input from human experts 
+      </A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2016/patching-web-applications-0415"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Bug-Finder-1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/patching-web-applications-0415">Patching 
+      up Web applications</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2016/mit-professional-education-announces-new-online-course-internet-things-0408"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/internet-of-things.png" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/mit-professional-education-announces-new-online-course-internet-things-0408">MIT 
+      Professional Education announces new online course on the Internet of 
+      Things</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-2 views-row-even"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/topic/research-laboratory-electronics">Research 
+    Laboratory of Electronics</A></SPAN>              
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-dc6cf7be59a95e3b1b788dfa1e762dac">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/stabilizing-quantum-bits-0406"><IMG width="90" 
+      height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Quantum-Feedback-1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/stabilizing-quantum-bits-0406">Stabilizing 
+      quantum bits</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/national-public-private-institute-innovations-fibers-fabrics-0401"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-AFFOA-Fink-1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/national-public-private-institute-innovations-fibers-fabrics-0401">New 
+      institute will accelerate innovations in fibers and 
+fabrics</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2016/monterrey-tec-researchers-exhilarated-nanotech-challenges-0329"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/monterrey-tec-mit.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/monterrey-tec-researchers-exhilarated-nanotech-challenges-0329">Monterrey 
+      Tec researchers exhilarated by nanotech challenges</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2016/seminar-climate-change-electrical-engineers-0318"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/Rajeev-Ram-MIT-A1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/seminar-climate-change-electrical-engineers-0318">In 
+      global efforts to address climate change, electrical engineers have 
+      crucial role</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-3 views-row-odd"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/centers-labs-programs/biomimetics-robotics-lab">Biomimetics 
+    Robotics Lab</A></SPAN>              
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-eee0ab15c6041569c02b3492e3d45fef">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI class="views-row views-row-1 views-row-odd views-row-first views-row-last clearfix"><A 
+      href="http://news.mit.edu/2014/mit-cheetah-robot-runs-jumps-0915"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Cheetah-A1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2014/mit-cheetah-robot-runs-jumps-0915">Bound 
+      for robotic glory</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-4 views-row-even"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/topic/csail">Computer Science and Artificial 
+    Intelligence Laboratory (CSAIL)</A></SPAN>              
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-2ade6dd7fd5340e0012d26a5330f0c56">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2016/self-driving-cars-meet-rubber-duckies-0420"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Duckiebot-autonomous-vehicles.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/self-driving-cars-meet-rubber-duckies-0420">Self-driving 
+      cars, meet rubber duckies</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2016/ai-system-predicts-85-percent-cyber-attacks-using-input-human-experts-0418"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/AI2-CSAIL.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/ai-system-predicts-85-percent-cyber-attacks-using-input-human-experts-0418">System 
+      predicts 85 percent of cyber-attacks using input from human experts 
+      </A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2016/patching-web-applications-0415"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/MIT-Bug-Finder-1.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/patching-web-applications-0415">Patching 
+      up Web applications</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2016/mit-professional-education-announces-new-online-course-internet-things-0408"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/internet-of-things.png" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2016/mit-professional-education-announces-new-online-course-internet-things-0408">MIT 
+      Professional Education announces new online course on the Internet of 
+      Things</A></SPAN></LI></UL></DIV></DIV></DIV></LI>
+    <LI class="views-row views-row-5 views-row-odd views-row-last"><SPAN class="browse-news-term"><A 
+    href="http://news.mit.edu/centers-labs-programs/technology-and-policy-program">Technology 
+    and Policy Program</A></SPAN>              
+    <DIV class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-4949f80c2e57e5dd059bc0f31f68af2d">
+    <DIV class="view-header-section">
+    <DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+            
+    <DIV class="view-main-section">
+    <DIV class="view-content">
+    <UL class="browse-news-items">
+      <LI 
+      class="views-row views-row-1 views-row-odd views-row-first clearfix"><A 
+      href="http://news.mit.edu/2015/designing-flexibility-richard-de-neufville-0720"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/richard-de-neufville-mit.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2015/designing-flexibility-richard-de-neufville-0720">Designing 
+      for flexibility</A></SPAN></LI>
+      <LI class="views-row views-row-2 views-row-even clearfix"><A href="http://news.mit.edu/2015/sami-khan-young-researcher-award-0702"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/khan_0_0.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2015/sami-khan-young-researcher-award-0702">Graduate 
+      student Sami Khan receives Young Researcher Award</A></SPAN></LI>
+      <LI class="views-row views-row-3 views-row-odd clearfix"><A href="http://news.mit.edu/2014/dava-newman-nasa-deputy-administrator-1017"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/newman,dava_0.png" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2014/dava-newman-nasa-deputy-administrator-1017">Dava 
+      Newman nominated for NASA post</A></SPAN></LI>
+      <LI 
+      class="views-row views-row-4 views-row-even views-row-last clearfix"><A 
+      href="http://news.mit.edu/2014/alumna-space-show-saturday-mornings"><IMG 
+      width="90" height="60" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/10.7.14_Calandrelli_1_0.jpg" 
+      typeof="foaf:Image"></A><SPAN class="browse_news_by_term_item"><A href="http://news.mit.edu/2014/alumna-space-show-saturday-mornings">Alumna 
+      takes up space on Saturday 
+    mornings</A></SPAN></LI></UL></DIV></DIV></DIV></LI></UL></DIV></DIV></DIV>
+  <DIV class="link-more"><A href="http://news.mit.edu/research-centers">See All 
+  Centers, Labs, &amp; Programs</A></DIV></DIV></LI></UL>
+<P class="other-options"><A href="http://news.mit.edu/user/login">Login</A><SPAN 
+class="text">or</SPAN>                     <A href="http://news.mit.edu/subscribe-newsletter">Subscribe 
+Newsletter</A></P></DIV></DIV></DIV></NAV><ARTICLE>
+<DIV id="site-content-area-wrapper">
+<DIV id="site-content-area">
+<DIV class="view view-news-article-top-slideshow-flexslider view-id-news_article_top_slideshow_flexslider view-display-id-block article-top-slideshow-flexslider view-dom-id-36e9ac9b4bfc269c9ea461a406ee6e17">
+<DIV class="view-header-section">
+<DIV class="view-header-section-wrapper"></DIV></DIV><!-- end of view-header-section --> 
+        
+<DIV class="view-main-section">
+<DIV class="view-content">
+<DIV class="flexslider">
+<UL class="slides">
+  <LI>
+  <DIV class="slide-wrapper">
+  <DIV class="image"><IMG title="" alt="" src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/20100816151036-0_0.jpg"></DIV>
+  <DIV class="descr">
+  <DIV class="text"></DIV><A class="top-slideshow-full" href="http://news.mit.edu/sites/mit.edu.newsoffice/files/images/2009/20100816151036-0_0.jpg" 
+  rel="top-slideshow">Full 
+Screen</A></DIV></DIV></LI></UL></DIV></DIV></DIV></DIV><HEADER>
+<DIV class="content-sides-padding">
+<DIV class="article-header">
+<H1 class="article-heading" itemprop="name headline">Explained: P vs. 
+NP</H1><IMG width="228" height="152" title="" class="article-cover-image" alt="" 
+src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/20100816151036-0.jpg" 
+typeof="foaf:Image" itemprop="image">                 
+<P id="article-summary"><SPAN itemprop="description">The most notorious problem 
+in theoretical computer science remains open, but the attempts to solve it have 
+led to profound insights.</SPAN>                                 
+</P></DIV></DIV></HEADER>
+<DIV class="columns-container-1 clearfix">
+<DIV class="column-1">
+<DIV class="clearfix content-sides-padding" id="info-section">
+<DIV class="left">
+<P><SPAN itemprop="author">Larry Hardesty, MIT News Office</SPAN>                
+         <BR><SPAN itemprop="datePublished" content="2009-10-29">October 29, 
+2009</SPAN>                     </P></DIV>
+<DIV class="right">
+<DIV class="options"><A id="button-share" href="http://news.mit.edu/2009/explainer-pnp#share-choices"><SPAN>Share</SPAN></A> 
+                    </DIV></DIV></DIV>
+<DIV class="share-article">
+<H3>Share</H3>
+<DIV class="clearfix" id="share-choices">
+<DIV class="addthis_toolbox addthis_default_style addthis_32x32_style" 
+addthis:url="http://mitne.ws/1wi0LnC"><A class="addthis_button_facebook"></A>    
+                 <A class="addthis_button_twitter"></A>                     <A 
+class="addthis_button_google_plusone_share"></A>                     <A class="addthis_button_reddit"></A> 
+                    <A class="addthis_button_stumbleupon"></A>                   
+  <A class="addthis_button_linkedin"></A>                     <A class="addthis_button_email"></A> 
+                    <A class="addthis_button_print"></A>                     <A 
+class="addthis_button_compact"></A>                     </DIV>
+<H3 class="label comment">Comment</H3><A class="button_commment" href="http://news.mit.edu/2009/explainer-pnp#separator-comments"><SPAN>Leave 
+a comment</SPAN></A>                     </DIV>
+<SCRIPT src="Explained%20P%20vs_%20NP%20%20MIT%20News_files/addthis_widget.js" type="text/javascript"></SCRIPT>
+                 </DIV>
+<DIV class="content-sides-padding" id="article-body-main" 
+itemprop="articleBody">
+<DIV class="region region-content">
+<DIV class="block block-system" id="block-system-main">
+<DIV class="content">
+<DIV class="field field-name-field-article-content field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even">
+<P><I>Science and technology journalists pride themselves on the ability to 
+explain complicated ideas in accessible ways, but there are some technical 
+principles that we encounter so often in our reporting that paraphrasing them or 
+writing around them begins to feel like missing a big part of the story. So in a 
+new series of articles called "Explained," MIT News Office staff will explain 
+some of the core ideas in the areas they cover, as reference points for future 
+reporting on MIT research.</I></P>
+<P>In the 1995 Halloween episode of <I>The Simpsons</I>, Homer Simpson finds a 
+portal to the mysterious Third Dimension behind a bookcase, and desperate to 
+escape his in-laws, he plunges through. He finds himself wandering across a dark 
+surface etched with green gridlines and strewn with geometric shapes, above 
+which hover strange equations. One of these is the deceptively simple assertion 
+that P = NP.</P>
+<P>In fact, in a 2002 poll, 61 mathematicians and computer scientists said that 
+they thought P probably didn’t equal NP, to only nine who thought it did — and 
+of those nine, several told the pollster that they took the position just to be 
+contrary. But so far, no one’s been able to decisively answer the question one 
+way or the other. Frequently called the most important outstanding question in 
+theoretical computer science, the equivalency of P and NP is one of the seven 
+problems that the Clay Mathematics Institute will give you a million dollars for 
+proving — or disproving. Roughly speaking, P is a set of relatively easy 
+problems, and NP is a set of what seem to be very, very hard problems, so P = NP 
+would imply that the apparently hard problems actually have relatively easy 
+solutions. But the details are more complicated.</P>
+<P>Computer science is largely concerned with a single question: How long does 
+it take to execute a given algorithm? But computer scientists don’t give the 
+answer in minutes or milliseconds; they give it relative to the number of 
+elements the algorithm has to manipulate.</P>
+<P>Imagine, for instance, that you have an unsorted list of numbers, and you 
+want to write an algorithm to find the largest one. The algorithm has to look at 
+all the numbers in the list: there’s no way around that. But if it simply keeps 
+a record of the largest number it’s seen so far, it has to look at each entry 
+only once. The algorithm’s execution time is thus directly proportional to the 
+number of elements it’s handling — which computer scientists designate N. Of 
+course, most algorithms are more complicated, and thus less efficient, than the 
+one for finding the largest number in a list; but many common algorithms have 
+execution times proportional to N<SUP>2</SUP>, or N times the logarithm of N, or 
+the like.</P>
+<P>A mathematical expression that involves N’s and N<SUP>2</SUP>s and N’s raised 
+to other powers is called a polynomial, and that’s what the “P” in “P = NP” 
+stands for. P is the set of problems whose solution times are proportional to 
+polynomials involving N's.</P>
+<P>Obviously, an algorithm whose execution time is proportional to N<SUP>3</SUP> 
+is slower than one whose execution time is proportional to N. But such 
+differences dwindle to insignificance compared to another distinction, between 
+polynomial expressions — where N is the number being raised to a power — and 
+expressions where a number is raised to the Nth power, like, say, 
+2<SUP>N</SUP>.</P>
+<P>If an algorithm whose execution time is proportional to N takes a second to 
+perform a computation involving 100 elements, an algorithm whose execution time 
+is proportional to N<SUP>3</SUP> takes almost three hours. But an algorithm 
+whose execution time is proportional to 2<SUP>N</SUP> takes 300 quintillion 
+years. And that discrepancy gets much, much worse the larger N grows.</P>
+<P>NP (which stands for nondeterministic polynomial time) is the set of problems 
+whose solutions can be verified in polynomial time. But as far as anyone can 
+tell, many of those problems take exponential time to solve. Perhaps the most 
+famous problem in NP, for example, is finding prime factors of a large number. 
+Verifying a solution just requires multiplication, but solving the problem seems 
+to require systematically trying out lots of candidates.</P>
+<P>So the question “Does P equal NP?” means “If the solution to a problem can be 
+verified in polynomial time, can it be found in polynomial time?” Part of the 
+question’s allure is that the vast majority of NP problems whose solutions seem 
+to require exponential time are what’s called NP-complete, meaning that a 
+polynomial-time solution to one can be adapted to solve all the others. And in 
+real life, NP-complete problems are fairly common, especially in large 
+scheduling tasks. The most famous NP-complete problem, for instance, is the 
+so-called traveling-salesman problem: given N cities and the distances between 
+them, can you find a route that hits all of them but is shorter than … whatever 
+limit you choose to set?</P>
+<P>Given that P probably doesn’t equal NP, however — that efficient solutions to 
+NP problems will probably never be found — what’s all the fuss about? Michael 
+Sipser, the head of the MIT Department of Mathematics and a member of the 
+Computer Science and Artificial Intelligence Lab’s Theory of Computation Group 
+(TOC), says that the P-versus-NP problem is important for deepening our 
+understanding of computational complexity.</P>
+<P>“A major application is in the cryptography area,” Sipser says, where the 
+security of cryptographic codes is often ensured by the complexity of a 
+computational task. The RSA cryptographic scheme, which is commonly used for 
+secure Internet transactions — and was invented at MIT — “is really an outgrowth 
+of the study of the complexity of doing certain number-theoretic computations,” 
+Sipser says.</P>
+<P>Similarly, Sipser says, “the excitement around quantum computation really 
+boiled over when Peter Shor” — another TOC member — “discovered a method for 
+factoring numbers on a quantum computer. Peter's breakthrough inspired an 
+enormous amount of research both in the computer science community and in the 
+physics community.” Indeed, for a while, Shor’s discovery sparked the hope that 
+quantum computers, which exploit the counterintuitive properties of extremely 
+small particles of matter, could solve NP-complete problems in polynomial time. 
+But that now seems unlikely: the factoring problem is actually one of the few 
+hard NP problems that is not known to be NP-complete.</P>
+<P>Sipser also says that “the P-versus-NP problem has become broadly recognized 
+in the mathematical community as a mathematical question that is fundamental and 
+important and beautiful. I think it has helped bridge the mathematics and 
+computer science communities.”</P>
+<P>But if, as Sipser says, “complexity adds a new wrinkle on old problems” in 
+mathematics, it’s changed the questions that computer science asks. “When you’re 
+faced with a new computational problem,” Sipser says, “what the theory of 
+NP-completeness offers you is, instead of spending all of your time looking for 
+a fast algorithm, you can spend half your time looking for a fast algorithm and 
+the other half of your time looking for a proof of NP-completeness.”</P>
+<P>Sipser points out that some algorithms for NP-complete problems exhibit 
+exponential complexity only in the worst-case scenario and that, in the average 
+case, they can be more efficient than polynomial-time algorithms. But even 
+there, NP-completeness “tells you something very specific,” Sipser says. “It 
+tells you that if you’re going to look for an algorithm that’s going to work in 
+every case and give you the best solution, you’re doomed: don’t even try. That’s 
+useful information.”</P></DIV></DIV></DIV>
+<HR id="separator-comments">
+<SECTION>
+<DIV id="article-tags">
+<P><STRONG class="label">Topics:</STRONG><SPAN class="tags"><A href="http://news.mit.edu/topic/computational-complexity-theory">Computational 
+complexity theory</A><SPAN class="comma">, </SPAN><A href="http://news.mit.edu/topic/theoretical-computer-science">Theoretical 
+computer science</A><SPAN class="comma">, </SPAN><A href="http://news.mit.edu/topic/explained">Explained</A><SPAN 
+class="comma">, </SPAN><A href="http://news.mit.edu/topic/p-vs-np">P vs. 
+NP</A></SPAN></P></DIV></SECTION><SECTION>
+<DIV id="article-comments">
+<DIV class="comments">
+<H2 class="title">Comments</H2><A id="comment-25054"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Patrick McGovern      </P>
+<P class="comment-time">        October 29, 2009       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>N=1</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25055"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Jim      </P>
+<P class="comment-time">        October 29, 2009       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>Donuts = MMMMmmm..</P>
+<P>That is the only true homer simpson equation.</P></DIV></DIV></DIV></DIV><!-- /.content --> 
+  </DIV><!-- /.comment-text --> </DIV><A id="comment-25056"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Adam Hufangel      </P>
+<P class="comment-time">        October 29, 2009       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>As time approches infinity P=NP, the problem is really solving a relative 
+problem in a non-relative plain, in this case infinte time.</P>
+<P>If Time reaches infinite amounts, it's only logical to assume that every 
+possible option to solving the problem has been exhasted, and eventually a 
+solution, or in some cases the lack there-of would be discovered.</P>
+<P>Also given an infinite amount of time and a finite set of options to derive 
+the solution it's only logical to beleive that not only would the solution be 
+discovered, but also the most easiest method at arriving at said solution.... 
+thus P=NP</P>
+<P>To be totally honest string theory pretty much makes this NP=P, but I don't 
+think we have enough comment space for that.</P></DIV></DIV></DIV></DIV><!-- /.content --> 
+  </DIV><!-- /.comment-text --> </DIV><A id="comment-25057"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        James Falk      </P>
+<P class="comment-time">        October 29, 2009       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>P=NP if P = 2*pi radians or 360 degrees and N is an integer value....or, in 
+fact, there is a family of similar solutions if P= k * 2pi where 'k' is any 
+integer value.</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25058"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Nirmal Vijay      </P>
+<P class="comment-time">        October 30, 2009       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>Pi = Not Pie</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25059"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Jacques Lapeyre      </P>
+<P class="comment-time">        October 30, 2009       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>((P=NP)=NP)=P</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25060"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        NPierre de Fermat      </P>
+<P class="comment-time">        October 30, 2009       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>I have discovered a truly marvelous proof of this, which this comment form is 
+too narrow to contain.</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25061"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Carl Thompson      </P>
+<P class="comment-time">        October 30, 2009       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>I like turtles.</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25062"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Jack Mckinney      </P>
+<P class="comment-time">        November 2, 2009       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>p=o,and or n=0,and or both = 0.</P></DIV></DIV></DIV></DIV><!-- /.content --> 
+  </DIV><!-- /.comment-text --> </DIV><A id="comment-25063"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Rolly      </P>
+<P class="comment-time">        November 3, 2009       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>??????????</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25064"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        TL Winslow      </P>
+<P class="comment-time">        November 10, 2009       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>It's like when you try to make a chess-playing program. You have to either go 
+with total brute force, trying every possible move for each side all the way to 
+the end before deciding your first move, which takes the life of the Universe or 
+something, or you have to be satisfied with looking ahead n moves only. But the 
+rub is that at the nth move you have to evaluate the board, and if it's not a 
+mate you have to assign a quality score to the position, which is insanely 
+impossible, since for instance a position that has one queen less than another 
+would have to be given a far lower score, yet that move might be a queen 
+sacrifice that wins if only you had gone to the n+1 or n+2 level to check. So 
+chess is easy to compute that somebody won, but impossible to find a way to win 
+in polynomial time. QED, and don't waste your life on silly kid 
+games.</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25065"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Ritesh      </P>
+<P class="comment-time">        December 18, 2009       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>Assume P=NP</P>
+<P>Divide both sides by P.</P>
+<P>therefore 1=N</P>
+<P>Hence P=NP only if N=1</P>
+<P>      P!=NP for N&gt;1</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25066"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        John Gowers      </P>
+<P class="comment-time">        June 28, 2010       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>You can't divide both sides by P without considering that P could equal 
+0.</P>
+<P>Corrected proof:</P>
+<P>P = NP</P>
+<P>NP - P = 0</P>
+<P>P(N - 1) = 0</P>
+<P>P = 0, N = 1.</P>
+<P>i.e. [If P and N were variables],</P>
+<P>P = NP if and only if P = 0 OR N = 1.</P></DIV></DIV></DIV></DIV><!-- /.content --> 
+  </DIV><!-- /.comment-text --> </DIV><A id="comment-25067"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Brauh      </P>
+<P class="comment-time">        July 14, 2010       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>Why is such a question posed about form in the first place, I mean like an 
+attempt to encapsulate a class of 'closed form'?</P></DIV></DIV></DIV></DIV><!-- /.content --> 
+  </DIV><!-- /.comment-text --> </DIV><A id="comment-25068"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Brauh      </P>
+<P class="comment-time">        July 14, 2010       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>We can dismiss with this petty algebraic mockery assuming P, N, or NP are the 
+variables and their product.</P>
+<P>Mathematicians, like the Geologists, have simply monikered their own "K.T. 
+Boundary"; and the mathematicians have called it their P.'=' N.P. boundary for 
+their philosophy.  So put away your graphic calculators you are way..way..way, 
+out of your league.  Please observe:</P>
+<P>Title:</P>
+<P>Handbook of theoretical computer science / edited by Jan van Leeuwen.</P>
+<P>Publisher:</P>
+<P>Amsterdam ; New York : Elsevier ; Cambridge, Mass. : MIT Press, 1990.</P>
+<P>ISBN:</P>
+<P>0262220407 (MIT Press : set)</P>
+<P>0262220385 (MIT Press : v. A)</P>
+<P>0262220393 (MIT Press : v. B)</P>
+<P>0444880755 (U.S. : set)</P>
+<P>0444880712 (U.S. : v. A)</P>
+<P>0444880747 (U.S. : v. B)</P></DIV></DIV></DIV></DIV><!-- /.content -->   
+</DIV><!-- /.comment-text --> </DIV><A id="comment-25069"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Justin      </P>
+<P class="comment-time">        December 9, 2011       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>I noticed in the video lecture of P vs NP by Mr. Sipser that the analogy used 
+was that of finding a needle in a hay stack.  And that the way you could find it 
+easily is to simply use a magnet.  This analogy has some flaws in that the 
+needle has different properties than the hay does, it's metal.  You could burn 
+the hay stack but that requires you to destroy all other possibilities, you lose 
+information.  You could use a metal detector but anyone who's ever used one 
+knows that you don't find what you're looking for immediately; this is what 
+probabilities do for you.</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25070"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Civil Alerts      </P>
+<P class="comment-time">        January 3, 2012       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>P=NP has been solved using Energy Loop Theory formulation... <A href="http://www.google.com/search?q=energy+loop+theory" 
+rel="nofollow">http://www.google.com/search?q=energy+loop+theory</A></P></DIV></DIV></DIV></DIV><!-- /.content --> 
+  </DIV><!-- /.comment-text --> </DIV><A id="comment-25071"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Jonathan      </P>
+<P class="comment-time">        June 26, 2012       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>From a novel theoretical perspective in the book,  THE OBELUS SET THEORY OF 
+EQUITY DISTRIBUTION , set concept(s) of the fundamental process of sharing has 
+been used to provide a simple proof for the equality or non-equality between the 
+class of P and NP class. It turns out that P is equal to 
+NP!</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25072"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Randall Lee Reetz      </P>
+<P class="comment-time">        September 11, 2012       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>I can't believe that the author of this educational post used the symbol "N" 
+in an attempt to clarify P vs. NP. What a hot mess! In P vs. NP, "N" stands for 
+"non" as in non-poynomial. To obfuscate this already confusing topic by using N 
+to denote "the number of operations" is more than a little laughable. 
+Especially, when the whole point of this series is "explanation". Are there any 
+editors on the staff? Peer review? A girlfriend or husband or co-worker willing 
+to check for clarity?</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25073"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        henry lepe      </P>
+<P class="comment-time">        December 4, 2012       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>the traveling salesman is not n!but</P>
+<P>the sum of (n-i) from i=0 to n-1</P></DIV></DIV></DIV></DIV><!-- /.content --> 
+  </DIV><!-- /.comment-text --> </DIV><A id="comment-25074"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        henry lepe      </P>
+<P class="comment-time">        December 28, 2012       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>proof of goldbach</P>
+<P>take an nxn tableas n goes to infinity.</P>
+<P>p(n) is the nth prime. process al p(n),n=&gt; 2.process p(k)+p(n) in 
+column</P>
+<P>k-1 starting in row p(k)+p(2).example:</P>
+<P>column1       Column k-1</P>
+<P>p(2)+p(2)</P>
+<P>p(2)+p(3)</P>
+<P>    .</P>
+<P>    .          p(k)+p(2)</P>
+<P>    .          p(k)+P(3)</P>
+<P>                   .</P>
+<P>                   .</P>
+<P>P(2)+p(n)          .</P>
+<P>               p(k)+p(n)</P>
+<P>etc.for an inite number of rows an columns. For goldbach to be false 
+there</P>
+<P>would have to be at least one empty even row. this procedure makes an 
+empty</P>
+<P>even row impossible. therefore all even numbers=&gt;6 are accounted for. then 
+just add 2+2=4</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25075"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        henry lepe      </P>
+<P class="comment-time">        January 2, 2013       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>proof of goldbach</P>
+<P>a nXn table as n goes to infinity</P>
+<P>indentation correction</P>
+<P>p(k)+p(n) ,n=&gt;2 is processed in column k-1 starting in row p(k)+p(2) 
+example</P>
+<P>column 1...... column k-1</P>
+<P>p(2)+p(2)</P>
+<P>p(2)+p(3)</P>
+<P>   .</P>
+<P>   ...........  p(k)+p(2)</P>
+<P>   ...........  p(k)+p(2)</P>
+<P>   .</P>
+<P>P(2)+p(n)</P>
+<P>  ............. p(k)+p(n)</P>
+<P>    .</P>
+<P>    .</P>
+<P>etC. for an infinite number of rows and an infinite number of columns. For 
+Goldbach to be false there would have to be at least one empty even row.  
+This</P>
+<P>procedure makes an empty even row impossible. Therefore all even numbers</P>
+<P>=&gt; 6 are accounted for. Then just add</P>
+<P>2+2=4</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25076"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Joel      </P>
+<P class="comment-time">        March 12, 2013       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>If you Google... P = NP   Math Question you'll find its worth a million if 
+solved.</P>
+<P> With the help of my son theryn.... I think we solved it.</P>
+<P>N = 0</P>
+<P>P = P</P>
+<P>P = 0P</P>
+<P>0 = infi</P>
+<P>Hence P = NP if NP = infi 0</P>
+<P>P=NP is  nothing or space.</P>
+<P>Space = Time</P>
+<P>Time = Light</P>
+<P>Light = Time Space</P>
+<P>P = Light  NP = Time Space</P>
+<P>Solution is</P>
+<P>Light &gt;Time Space or P= Measured Time Space</P></DIV></DIV></DIV></DIV><!-- /.content --> 
+  </DIV><!-- /.comment-text --> </DIV><A id="comment-25077"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Anthony Vossman      </P>
+<P class="comment-time">        October 15, 2013       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>We immediately see:</P>
+<P>One algorithm to deliver a general NP problem/question and one algorithm to 
+provide a general solution. versus... One algorithm to deliver a particular 
+example and one algorithm to verify that particular example.</P>
+<P>Therefore we have an analysis required for four algorithms of which only 
+three can necessarily be considered verifiably P and already fully grounded on a 
+particular axiomatic foundation. There is still one open algorithm to fully 
+establish and fully account for, i.e., the general proof.</P>
+<P>So, P = NP requires circle-squaring for now, therefore P not= NP until a 
+general polynomial time NP proof is found, if that can be done. Finally, since 
+this analysis itself requires an algorithm, we may be dealing with quintic 
+impossibility here.</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25078"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Peter      </P>
+<P class="comment-time">        October 18, 2013       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>Seems to me mathematics is a field limited to imagination.</P>
+<P>   P = n  p</P>
+<P>Water= 5 H20 thinking of it in this nature you may make different connections 
+as to possible solution sets to this problem. The only relationships or values 
+these variables have are the ones we give them.</P>
+<P>So in this instance I have used the common term for water and the Chemical 
+make up and n would be the quantity. Regardless of how much water you have it is 
+still water.</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25079"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        nicolae marius      </P>
+<P class="comment-time">        May 10, 2014       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>The first choise</P>
+<P>A man (Bob) is a Turing machine and a women (Any) is input data. Then 
+transition function is "what he tells them AFTER START" to acceptance state.</P>
+<P>For a deterministic Turing machine the inputa data is Any.</P>
+<P>For a nodeterministic Turing machine Bob has before START two women: Any and 
+Ana and he must chosse befor START one of them.</P>
+<P>If he choose Any is ok, but if he chooses ANA?,</P>
+<P>Can we compare the complexity of two problems?</P>
+<P>That means Nondeterministic Turing machine input change prior to START?</P>
+<P>Smiling man. It's just an anecdote</P></DIV></DIV></DIV></DIV><!-- /.content --> 
+  </DIV><!-- /.comment-text --> </DIV><A id="comment-25080"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Callum Britton      </P>
+<P class="comment-time">        May 19, 2014       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>I believe that P=NP; I am 12 years old but I still have a view. NP is non 
+deterministic but that is because we cannot work it out. Our computers cannot 
+solve it. we cannot solve them quickly... supposedly; what if there is a 
+solution to these which do not make us go through every possibility. Take the 
+millennium problem for instance: (I may not be correct but bare with me) It 
+seems so hard because we have 400 students to sort. But what if we have a 
+method: What I have done is:</P>
+<P>1. Put the two sections/amounts that you have to split ,which is students in 
+this case, into ratio: 300:100 which is 3:1</P>
+<P>2. Put this into fraction: 3/1 which is 3</P>
+<P>3. Put 3 to the power of the normal amount which is 3^400</P>
+<P>This could potentially be the answer but I am not guaranteeing anything.</P>
+<P>3. Then do</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25081"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Zack Y.      </P>
+<P class="comment-time">        August 11, 2014       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>Its unlikely that P=NP with classical computation, but I think we might find 
+an algorithm to do it with quantum computers. Somehow N qubits can do 2^N (or 
+more) operations simultaneously, and physicists still have no clear answer as to 
+what is doing that work. Some will straight up tell you, like David Deutsch, 
+that the ops are running in parallel universes, other evidence points to quantum 
+systems being influenced by future events.</P>
+<P>The assumption going into P=NP is that future computations cannot influence 
+current ones. If Quantum Physics shows that that's EXACTLY how nature does 
+things, you can have P=NP: the eventual solution could be used to generate 
+itself!.</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25082"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        asdf      </P>
+<P class="comment-time">        September 30, 2014       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>The answer is simple. -pi alpha</P></DIV></DIV></DIV></DIV><!-- /.content --> 
+  </DIV><!-- /.comment-text --> </DIV><A id="comment-25083"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Emmanuel Xagorarakis      </P>
+<P class="comment-time">        May 27, 2015       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>I wish to announce the genuine solution to the P vs NP Problem (that is P 
+does not equal NP). The solution by solid proof is included, among other 
+solutions, in my<BR>published number theory, free-accessed at:</P>
+<P><A href="http://www.saitabooks.eu/2015/01/ebook.134.html" 
+rel="nofollow">http://www.saitabooks.eu/2015/01/ebook.134.html</A></P>
+<P>Having proven what a (pure) number is, the essential criterion has come to 
+surface; the true numeric function of addition/subtraction, and the fact that 
+the<BR>multiplication/division has to absolutely be interpreted as 
+addition/subtraction (unit-by-unit elementary function) so that there actually 
+exists a function of multiplication or division. Simple: the computer counts 1 2 
+3 4 5, but it doesn't count 12.345, which constitutes a division, thus a 
+factorial deed. The numeric nature is this of addition, not multiplication. 
+Multiplication is the basis for any factorial counting. Yet, e.g. 2x3=6 cannot 
+be considered as existent unless there exists the statement 2+2+2=6. The latter 
+holds all the essence of 6. The former bears no meaning at all when it is about 
+pure numbers.</P>
+<P>Responsible critique is always welcome!</P></DIV></DIV></DIV></DIV><!-- /.content --> 
+  </DIV><!-- /.comment-text --> </DIV><A id="comment-25084"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        Weatherlawyer      </P>
+<P class="comment-time">        June 26, 2015       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>If I have understood the idea it is not a problem of computation so much as 
+expertise. A chef knowing what ingredient is missing or a perfumer knowing what 
+ingredients are included?</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV><A id="comment-25085"></A> 
+<DIV class="comment-entry">
+<DIV class="submitted">
+<P class="commenter-name">        sudhir ghimire      </P>
+<P class="comment-time">        January 2, 2016       </P></DIV>
+<DIV class="comment-text">
+<DIV class="comment-arrow"></DIV><!--
+        -->     
+<DIV class="content"><SPAN class="rdf-meta element-hidden" resource="/2009/explainer-pnp" 
+rel="sioc:reply_of"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>Does it not depend on the starting point ?because when we check the solution 
+we have already assume or built the algorithm. so it doesnot start at the same 
+level of computation than solving the problem.To check the problem doesnot start 
+at the same level of computation. So it sometime is not even the same problem. 
+So n and np can be either way. Meaning any step could include more or less steps 
+or even same number of step depending on where we start the problem from. 
+</P></DIV></DIV></DIV></DIV><!-- /.content -->   </DIV><!-- /.comment-text --> 
+</DIV></DIV></DIV></SECTION></DIV></DIV></DIV></DIV></DIV>
+<DIV class="column-2"><SECTION>
+<DIV class="additional-info">
+<H3>Related</H3>
+<UL>
+  <LI><A class="external" href="http://theory.csail.mit.edu/" 
+  target="_blank">MIT Theory of Computation Group</A></LI>
+  <LI><A class="external" href="http://scottaaronson.com/blog/?p=122" target="_blank">Scott 
+  Aaronson’s reasons to think that P does not equal 
+NP</A></LI></UL></DIV></SECTION></DIV></DIV></DIV></DIV></ARTICLE>
+<DIV class="region region-content-footer">
+<DIV class="block block-mitnews-news-collection" id="block-mitnews-news-collection-block-latest-news-for-article">
+<DIV class="content">
+<DIV id="latest-news-content-block"></DIV></DIV></DIV></DIV><FOOTER>
+<DIV id="site-footer-area-wrapper">
+<DIV id="site-footer-area">
+<DIV class="container clearfix">
+<DIV id="site-footer-about">
+<H2>About This Website</H2>
+<P>This Website is maintained by the MIT News Office.</P>
+<DIV class="clearfix">
+<UL class="column">
+  <LI><A href="http://news.mit.edu/about">About the MIT News Office</A></LI>
+  <LI><A href="http://news.mit.edu/press">MIT News Press Center</A></LI>
+  <LI><A href="http://news.mit.edu/press/inquiries">Press Inquiries</A></LI>
+  <LI><A href="http://news.mit.edu/press/filming-guidelines">Filming 
+  Guidelines</A></LI>
+  <LI><A href="http://news.mit.edu/contact">Contact Us</A></LI>
+  <LI><A href="http://news.mit.edu/terms-of-use">Terms of Use</A></LI></UL>
+<UL class="column">
+  <LI><A href="http://news.mit.edu/rss">RSS</A></LI>
+  <LI><A href="https://twitter.com/mit" target="_blank">Twitter</A></LI>
+  <LI><A href="https://www.facebook.com/MITnews" 
+  target="_blank">Facebook</A></LI>
+  <LI><A href="https://plus.google.com/+mit/posts" 
+  target="_blank">Google+</A></LI>
+  <LI><A href="http://instagram.com/mitpics" target="_blank">Instagram</A></LI>
+  <LI><A href="http://www.flickr.com/photos/cpsphotolibrary" 
+  target="_blank">Flickr</A></LI>
+  <LI><A href="http://www.youtube.com/MIT" target="_blank">YouTube</A></LI></UL>
+<UL class="column">
+  <LI><A href="http://web.mit.edu/" target="_blank">MIT Homepage</A></LI>
+  <LI><A href="http://video.mit.edu/" target="_blank">MIT Video</A></LI>
+  <LI><A href="http://connect.mit.edu/" target="_blank">MIT Connect</A></LI>
+  <LI><A href="http://resources.mit.edu/" target="_blank">MIT Resources</A></LI>
+  <LI><A href="http://events.mit.edu/" target="_blank">Events 
+Calendar</A></LI></UL>
+<UL class="column">
+  <LI><A href="http://web.mit.edu/aboutmit/" target="_blank">About MIT</A></LI>
+  <LI><A href="http://web.mit.edu/admissions/" 
+  target="_blank">Admissions</A></LI>
+  <LI><A href="http://alum.mit.edu/" target="_blank">Alumni</A></LI>
+  <LI><A href="http://web.mit.edu/education/" target="_blank">Education</A></LI>
+  <LI><A href="http://web.mit.edu/research/" target="_blank">Labs and 
+  Centers</A></LI></UL></DIV></DIV>
+<DIV id="site-footer-resources">
+<H2>Resources</H2>
+<UL class="buttons">
+  <LI><A href="http://news.mit.edu/user/login?destination=user/campus-news/submit">Submit 
+  Campus News</A></LI>
+  <LI><A href="http://news.mit.edu/user/login?destination=user/pitch-story/submit">Pitch 
+  a Story</A></LI>
+  <LI><A href="http://news.mit.edu/subscribe-newsletter">Sign Up for 
+  Newsletter</A></LI>
+  <LI><A href="http://news.mit.edu/press/subscribe-to-press-releases">Subscribe 
+  to Press Releases</A></LI>
+  <LI><A href="http://news.mit.edu/terms-of-use">Terms of 
+Use</A></LI></UL></DIV></DIV>
+<DIV class="container clearfix">
+<DIV class="right"><A id="button-give-to-mit" href="http://news.mit.edu/give-to-mit" 
+target="_blank">GIVE TO MIT</A></DIV>
+<DIV class="left clearfix"><A class="footer-logo" href="http://web.mit.edu/" 
+target="_blank">Massachusetts Institute of Technology</A>
+<DIV class="footer-logo-text">
+<P><A href="http://news.mit.edu/about">MIT News Office</A>                     • 
+                     <A href="http://whereis.mit.edu/?go=11" 
+target="_blank">Building 11-400</A><BR><A href="http://web.mit.edu/" target="_blank">Massachusetts 
+Institute of Technology</A>                     •                      
+Cambridge, MA 02139-4307                     
+</P></DIV></DIV></DIV></DIV></DIV></FOOTER></DIV>
+<DIV class="back-to-top"><A 
+href="http://news.mit.edu/2009/explainer-pnp#"><SPAN>Back to the 
+top</SPAN></A></DIV></BODY></HTML>
