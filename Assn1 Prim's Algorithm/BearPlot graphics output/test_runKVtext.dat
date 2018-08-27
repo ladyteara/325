@@ -1,0 +1,20 @@
+700 700 white
+coordinate_plane
+triangle 20 20 40 40 10 40
+COmMent these words will be ignored
+line_dotted 40 40 100 100 green
+ovAl 500 200 600 400 purple
+
+circle 300 300 50 orange
+circle 300 300 25 blue
+circle 50 200 50
+
+
+rectangle 200 400 300 500 yellow
+sleep 0.5
+text 500 500 16 Text size 16
+text 500 525 14 Text size 14
+text 500 550 12 Text size 12
+text 500 575 10 Text size 10
+text 500 600 36 Text size 36
+line_solid 20 20 500 20 blue 5.0

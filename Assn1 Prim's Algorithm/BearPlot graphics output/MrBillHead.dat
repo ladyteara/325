@@ -1,0 +1,15 @@
+400 400 gray
+comment Bill's head
+circle 40 40 160 oldlace
+
+comment Bill's eyes
+circle 80 80 30 royalblue4
+circle 120 80 30 royalblue4
+
+comment Bill's nose
+circle 100 120 20 red
+
+comment Bill's mouth
+circle 100 150 40 red
+circle 110 160 20 white
+

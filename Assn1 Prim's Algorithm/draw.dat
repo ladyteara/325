@@ -1,0 +1,99 @@
+800 600 white
+line 50 500 100 450 gray50
+line 50 500 200 450 gray50
+line 50 500 300 450 gray50
+line 50 500 350 500 gray50
+line 50 500 300 550 gray50
+line 50 500 200 550 gray50
+line 50 500 100 550 gray50
+line 50 500 150 500 gray50
+line 100 450 50 500 gray50
+line 100 450 200 450 gray50
+line 100 450 300 450 gray50
+line 100 450 350 500 gray50
+line 100 450 300 550 gray50
+line 100 450 200 550 gray50
+line 100 450 100 550 gray50
+line 100 450 150 500 gray50
+line 200 450 50 500 gray50
+line 200 450 100 450 gray50
+line 200 450 300 450 gray50
+line 200 450 350 500 gray50
+line 200 450 300 550 gray50
+line 200 450 200 550 gray50
+line 200 450 100 550 gray50
+line 200 450 150 500 gray50
+line 300 450 50 500 gray50
+line 300 450 100 450 gray50
+line 300 450 200 450 gray50
+line 300 450 350 500 gray50
+line 300 450 300 550 gray50
+line 300 450 200 550 gray50
+line 300 450 100 550 gray50
+line 300 450 150 500 gray50
+line 350 500 50 500 gray50
+line 350 500 100 450 gray50
+line 350 500 200 450 gray50
+line 350 500 300 450 gray50
+line 350 500 300 550 gray50
+line 350 500 200 550 gray50
+line 350 500 100 550 gray50
+line 350 500 150 500 gray50
+line 300 550 50 500 gray50
+line 300 550 100 450 gray50
+line 300 550 200 450 gray50
+line 300 550 300 450 gray50
+line 300 550 350 500 gray50
+line 300 550 200 550 gray50
+line 300 550 100 550 gray50
+line 300 550 150 500 gray50
+line 200 550 50 500 gray50
+line 200 550 100 450 gray50
+line 200 550 200 450 gray50
+line 200 550 300 450 gray50
+line 200 550 350 500 gray50
+line 200 550 300 550 gray50
+line 200 550 100 550 gray50
+line 200 550 150 500 gray50
+line 100 550 50 500 gray50
+line 100 550 100 450 gray50
+line 100 550 200 450 gray50
+line 100 550 300 450 gray50
+line 100 550 350 500 gray50
+line 100 550 300 550 gray50
+line 100 550 200 550 gray50
+line 100 550 150 500 gray50
+line 150 500 50 500 gray50
+line 150 500 100 450 gray50
+line 150 500 200 450 gray50
+line 150 500 300 450 gray50
+line 150 500 350 500 gray50
+line 150 500 300 550 gray50
+line 150 500 200 550 gray50
+line 150 500 100 550 gray50
+circle 40 490 20 cyan4
+text 50 500 16 A
+circle 90 440 20 cyan4
+text 100 450 16 B
+circle 190 440 20 cyan4
+text 200 450 16 C
+circle 290 440 20 cyan4
+text 300 450 16 D
+circle 340 490 20 cyan4
+text 350 500 16 E
+circle 290 540 20 cyan4
+text 300 550 16 F
+circle 190 540 20 cyan4
+text 200 550 16 G
+circle 90 540 20 cyan4
+text 100 550 16 H
+circle 140 490 20 cyan4
+text 150 500 16 I
+line_solid 50 500 100 450 MediumOrchid4
+line_solid 100 450 150 500 MediumOrchid4
+line_solid 200 550 150 500 MediumOrchid4
+line_solid 100 550 150 500 MediumOrchid4
+line_solid 200 450 150 500 MediumOrchid4
+line_solid 200 450 300 450 MediumOrchid4
+line_solid 300 550 200 550 MediumOrchid4
+line_solid 200 450 350 500 MediumOrchid4
