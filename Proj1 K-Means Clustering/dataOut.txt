@@ -1,0 +1,149 @@
+500 450 peachPuff
+circle 309 217 5 blue
+text 308 216 9 AK
+circle 329 138 5 blue
+text 328 137 9 AL
+circle 279 59 5 blue
+text 278 58 9 AR
+circle 219 195 5 blue
+text 218 194 9 AZ
+circle 284 270 5 blue
+text 283 269 9 CA
+circle 159 310 5 blue
+text 158 309 9 CO
+circle 274 272 5 blue
+text 273 271 9 CT
+circle 234 214 5 blue
+text 233 213 9 DE
+circle 249 235 5 blue
+text 248 234 9 FL
+circle 269 235 5 blue
+text 268 234 9 GA
+circle 159 254 5 blue
+text 158 253 9 HI
+circle 194 243 5 blue
+text 193 242 9 IA
+circle 229 256 5 blue
+text 228 255 9 ID
+circle 174 201 5 blue
+text 173 200 9 IN
+circle 199 187 5 blue
+text 198 186 9 KS
+circle 289 200 5 blue
+text 288 199 9 KY
+circle 294 258 5 blue
+text 293 257 9 LA
+circle 189 247 5 blue
+text 188 246 9 MA
+circle 244 206 5 blue
+text 243 205 9 MD
+circle 234 220 5 blue
+text 233 219 9 ME
+circle 244 222 5 blue
+text 243 221 9 MI
+circle 184 259 5 blue
+text 183 258 9 MN
+circle 334 228 5 blue
+text 333 227 9 MO
+circle 214 203 5 blue
+text 213 202 9 MS
+circle 204 234 5 blue
+text 203 233 9 MT
+circle 149 240 5 blue
+text 148 239 9 NC
+circle 309 304 5 blue
+text 308 303 9 ND
+circle 144 285 5 blue
+text 143 284 9 NE
+circle 224 198 5 blue
+text 223 197 9 NH
+circle 324 225 5 blue
+text 323 224 9 NJ
+circle 244 211 5 blue
+text 243 210 9 NM
+circle 279 247 5 blue
+text 278 246 9 NV
+circle 139 289 5 blue
+text 138 288 9 NY
+circle 244 247 5 blue
+text 243 246 9 OH
+circle 204 168 5 blue
+text 203 167 9 OK
+circle 254 361 5 blue
+text 253 360 9 OR
+circle 264 247 5 blue
+text 263 246 9 RI
+circle 274 257 5 blue
+text 273 256 9 SC
+circle 139 220 5 blue
+text 138 219 9 SD
+circle 269 237 5 blue
+text 268 236 9 TN
+circle 224 286 5 blue
+text 223 285 9 TX
+circle 169 250 5 blue
+text 168 249 9 UT
+circle 169 190 5 blue
+text 168 189 9 VA
+circle 204 228 5 blue
+text 203 227 9 VT
+circle 289 319 5 blue
+text 288 318 9 WA
+circle 314 161 5 blue
+text 313 160 9 WI
+circle 229 118 5 blue
+text 228 117 9 WV
+circle 234 311 5 blue
+text 233 310 9 WY
+circle 28 392 5 red
+text 27 391 9 0
+circle 330 355 5 red
+text 329 354 9 1
+line 310 218 331 356 grey40
+line 330 139 331 356 grey40
+line 280 60 331 356 grey40
+line 220 196 331 356 grey40
+line 285 271 331 356 grey40
+line 160 311 29 393 grey40
+line 275 273 331 356 grey40
+line 235 215 331 356 grey40
+line 250 236 331 356 grey40
+line 270 236 331 356 grey40
+line 160 255 29 393 grey40
+line 195 244 331 356 grey40
+line 230 257 331 356 grey40
+line 175 202 331 356 grey40
+line 200 188 331 356 grey40
+line 290 201 331 356 grey40
+line 295 259 331 356 grey40
+line 190 248 331 356 grey40
+line 245 207 331 356 grey40
+line 235 221 331 356 grey40
+line 245 223 331 356 grey40
+line 185 260 331 356 grey40
+line 335 229 331 356 grey40
+line 215 204 331 356 grey40
+line 205 235 331 356 grey40
+line 150 241 29 393 grey40
+line 310 305 331 356 grey40
+line 145 286 29 393 grey40
+line 225 199 331 356 grey40
+line 325 226 331 356 grey40
+line 245 212 331 356 grey40
+line 280 248 331 356 grey40
+line 140 290 29 393 grey40
+line 245 248 331 356 grey40
+line 205 169 331 356 grey40
+line 255 362 331 356 grey40
+line 265 248 331 356 grey40
+line 275 258 331 356 grey40
+line 140 221 29 393 grey40
+line 270 238 331 356 grey40
+line 225 287 331 356 grey40
+line 170 251 331 356 grey40
+line 170 191 331 356 grey40
+line 205 229 331 356 grey40
+line 290 320 331 356 grey40
+line 315 162 331 356 grey40
+line 230 119 331 356 grey40
+line 235 312 331 356 grey40
