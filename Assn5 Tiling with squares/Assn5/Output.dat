@@ -1,0 +1,31 @@
+440 440 lightgray
+rectangle 0 190 250 440 mediumpurple2
+text 125 315 10 50
+rectangle 0 0 250 190
+rectangle 250 0 440 190
+rectangle 250 190 440 440
+sleep 2
+rectangle 0 0 190 190 mediumpurple2
+text 95 95 10 38
+rectangle 0 0 190 0
+rectangle 190 0 250 0
+rectangle 190 0 250 190
+sleep 2
+rectangle 250 0 440 190 mediumpurple2
+text 345 95 10 38
+rectangle 250 0 440 0
+rectangle 440 0 440 0
+rectangle 440 0 440 190
+sleep 2
+rectangle 250 305 385 440 mediumpurple2
+text 317 372 10 27
+rectangle 250 190 385 305
+rectangle 385 190 440 305
+rectangle 385 305 440 440
+sleep 2
+rectangle 250 190 365 305 mediumpurple2
+text 307 247 10 23
+rectangle 250 190 365 190
+rectangle 365 190 385 190
+rectangle 365 190 385 305
+sleep 2
